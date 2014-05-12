@@ -2,7 +2,7 @@
 
 	npm install evenizer
 
-and install [ImageMagick](http://www.imagemagick.org/script/binary-releases.php)
+This module requires [ImageMagick](http://www.imagemagick.org/script/binary-releases.php)
 
 
 # Usage
