@@ -1,9 +1,9 @@
 {
   "name": "evenizer",
-  "version": "0.1.1",
+  "version": "0.1.11",
   "description": "odd pixel images convert to even pixel",
-  "bin": "bin/evenizer.coffee",
-  "main": "bin/evenizer.coffee",
+  "bin": "bin/evenizer",
+  "main": "index.js",
   "devDependencies": {
     "optimist": "^0.6.1",
     "imagemagick": "^0.1.3",
