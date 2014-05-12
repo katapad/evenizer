@@ -1,6 +1,6 @@
 {
   "name": "evenizer",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "description": "odd pixel images convert to even pixel",
   "bin": "bin/evenizer",
   "main": "index.js",
