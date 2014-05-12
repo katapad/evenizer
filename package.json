@@ -2,6 +2,7 @@
   "name": "evenizer",
   "version": "0.1.0",
   "description": "",
+  "bin":  "bin/evenizer.coffee",
   "main": "bin/evenizer.coffee",
   "devDependencies": {
     "optimist": "^0.6.1",
