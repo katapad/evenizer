@@ -1,0 +1,10 @@
+{
+  "name": "evenizer",
+  "version": "0.1.0",
+  "description": "",
+  "main": "bin/evenizer.coffee",
+  "devDependencies": {
+    "optimist": "^0.6.1",
+    "imagemagick": "^0.1.3"
+  }
+}
