@@ -1,2 +1,4 @@
-.iml
+*.iml
 .idea
+npm-debug.log
+
