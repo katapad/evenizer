@@ -1,11 +1,14 @@
 {
   "name": "evenizer",
   "version": "0.1.0",
-  "description": "",
-  "bin":  "bin/evenizer.coffee",
+  "description": "odd pixel images convert to even pixel",
+  "bin": "bin/evenizer.coffee",
   "main": "bin/evenizer.coffee",
   "devDependencies": {
     "optimist": "^0.6.1",
-    "imagemagick": "^0.1.3"
+    "imagemagick": "^0.1.3",
+    "coffee-script": "^1.7.1",
+    "grunt": "^0.4.4",
+    "grunt-contrib-coffee": "^0.10.1"
   }
 }

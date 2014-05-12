@@ -1,0 +1,7 @@
+#!/usr/bin/env node
+
+process.bin = process.title = 'evenizer';
+
+evenizer = require('../lib/evenizer');
+
+evenizer.doEvenize()
