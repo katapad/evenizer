@@ -1,3 +1,3 @@
 evenizer = require './lib/evenizer'
 
-evenizer.doEvenize()
+module.exports = exports = evenizer
