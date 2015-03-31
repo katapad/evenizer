@@ -15,8 +15,7 @@
 
 process.bin = process.title = 'evenizer'
 
-
-argv = require('optimist').argv
+argv = require('optimist').boolean('resize').argv
 if not argv.i
   console.log 'file not found'
   return
@@ -52,10 +51,17 @@ evenize = (fileName)=>
     #-background #e2ddd4 -gravity southeast -splice 1999x25 sample367e.png
 
     if south or east
-      im.convert([fileName, '-background', 'rgba(0, 0, 0, 0)','-gravity', direction, '-splice',  "#{east}x#{south}", fileName], (err, stdout) ->
-        throw err  if err
-        console.log "complete:", fileName
-      )
+      if argv.resize
+        im.convert([fileName, '-resize', "#{features.width + east}x#{features.height + south}\!", fileName], (err, stdout) ->
+          throw err  if err
+          console.log "complete:", fileName
+        )
+      else
+        im.convert([fileName, '-background', 'rgba(0, 0, 0, 0)','-gravity', direction, '-splice',  "#{east}x#{south}", fileName], (err, stdout) ->
+          throw err  if err
+          console.log "complete:", fileName
+        )
+
 
 doEvenize = =>
   for fileName in fileList
